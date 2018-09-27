@@ -1,0 +1,58 @@
+create database BDSIES;
+
+use BDSIES;
+
+create table provedores(
+IDprove int(10) Primary key,
+Nomprove varchar(45) not null, 
+Telprove int(15) not null,
+Dirprove varchar(30) not null,
+Nitprove int(20) not null);
+
+create table tienda(
+IDtienda int(10) Primary key,
+Codtienda varchar(45) not null, 
+Rotatienda varchar(45) not null,
+Fechtienda varchar(20) not null);
+
+create table Usuarios(
+IDusu int(10) Primary key,
+Nomusu varchar(45) not null, 
+Codusu varchar(45) not null,
+Dirusu varchar(45) not null,
+Telusu int(10) not null);
+
+create table Clientes(
+IDclien int(10) Primary key,
+Nomclien varchar(45) not null, 
+Apeclien int(15) not null,
+Dirclien varchar(45) not null);
+
+create table Productos(
+IDProduc int(10) Primary key,
+NomProduc varchar(30) not null, 
+CodProduc varchar(45) not null,
+PreUProduc int(20) not null,
+CanProduc int(20)not null);
+mysql> insert into productos values (1234567,'cheetos','z01',1200,20);
+mysql> insert into productos values (143347,'gaseosa g','w01',1800,45);
+mysql> insert into productos values (143347,'jugos','r01',1800,15);
+mysql> insert into productos values (23747,'cigarrillos por unidad','y01',600,20);
+mysql> insert into productos values (00087,'cigarrillos por aquete','l01',2000,60);
+
+create table Empleados(
+Idemple int(10) Primary key,
+Nomemple varchar(45) not null, 
+TelCasaemple int(10) not null,
+TelCeluemple int(10) not null,
+Diremple varchar(45)not null);
+
+mysql> insert into empleados values (5588669,'lucia motta',7764535,311566456,'cra 9E Num 05 22');
+
+
+
+
+
+
+
+
